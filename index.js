@@ -1,7 +1,8 @@
 const RedisClient = require("./redis-client");
 
 async function demo() {
-  const result = RedisClient.create('God', 'damn it!');
+  await RedisClient.create('Car', 'Tesla S3X Models');
+  const result = await RedisClient.retrieve('Car');
   console.log(result);
 };
 
